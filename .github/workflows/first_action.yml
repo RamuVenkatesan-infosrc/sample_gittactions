@@ -13,6 +13,7 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: '17'  # Install Java 17
+          distribution: 'temurin'  # Required field (Use 'temurin' or 'zulu')
 
       - name: Compile Java Code
         run: javac Main.java  # Compile Main.java
